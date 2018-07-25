@@ -1,0 +1,109 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Siyu} % Your first name
+\familyname{Wang} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Room 230A, Building Zijing 1\#, Tsinghua University}{Beijing, China(100084)}
+\mobile{+86 13717611935}
+\email{wangsiyu15@mails.tsinghua.edu.cn}
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015.9--now}{Department of Electronic Engineering}{Tsinghua University}{}{\textit{GPA: 3.6246}}{Ranking: 10/245.\newline{}Core Courses: Calculus (4.0), Linear Algebra I (4.0), Linear Algebra II (3.7), Computer Program Design (4.0), 	Functions of Complex Variables and Equations of Mathematical Physics (4.0), Data and Algorithm (3.7), Probability and Stochastic Processes I (4.0), Fundamental of digital logic and processor (3.7), Advanced Matlab Programming and Its Applicatio (3.3), Signals and Systems (4.0), Fundamental Experiment of Digital Logic and Processor (3.7), Digital Signal Processing (4.0), Communications and Networks (3.3), Probability and Stochastic Processes II (3.7), Digital Image Processing (3.7), }
+
+\section{Research Experience}
+\cvitem{2018.6-now}{\textbf{Detecting and Avoiding Discriminations in NLP systems}\newline{}\textit{Advisor: Prof. Kaiwei Chang}, Department of Computer Science, UCLA
+\newline{}Modern ML and NLP system run the risk of amplifying biases present in data and potentially harming minorities. This project aims to identify and avoid these group biases (e.g., gender or race).
+\begin{itemize}
+    \item Analyze gender biases based on Histwords: \textit{Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change (Hamilton, et al, 2016)}. (Python)
+    \item Improve the quality of word embeddings across time based on Dynamic Bernoulli Model: \textit{Dynamic Bernoulli Embeddings for Language Evolution (Rudolph, et al, 2017)}. (Python, tensorflow)
+    \item Design more effective models to detect group biases other than gender bias, which is the easist. 
+\end{itemize}}
+\cvitem{2018.2--2018.6}{\textbf{Research on Textbook Question Answering, CVPR2018 as the thrid author}\newline{}\textit{Advisor: Prof. Jun Zhu and Hang Su,} Department of Computer Science, Tsinghua University
+\newline{}This project aims to implement TQA task using dynamic memory network, which is published on CVPR2018.
+\begin{itemize}
+    \item Implement a neural network to solve TQA task efficiently using memory and attention mechanism. (Python, tensorflow)
+\end{itemize}}
+\cvitem{2017.6--2017.9}{\textbf{Research on character detection.}\newline{}\textit{Advisor: Prof. Jun Zhu and Hang Su,} Department of  Computer Science, Tsinghua University\newline{}It aims to implement Textbox network based on Single Shot MultiBox Detector (SSD) which is used for character detection.
+\begin{itemize}
+    \item Implement the model of TextBoxes on Tensorflow, which is based on the network according to \textit{TextBoxes--A Fast Text Detector with a Single Deep Neural Network (Liao, et al, 2016)}.
+\end{itemize}
+}
+\cvitem{2016--2017.1}{\textbf{Research on GPS deception and anti-fraud technology}\newline{}\textit{Advisor: Associate Researcher. Jian Wang,} Department of Electronic Engineering, Tsinghua University\newline{}This project aims to implement GPS deception using SDR (Software Defined Radio) technology, ending up successfully implementing GPS deception using HackRf SDR platform.
+}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Course Projects}
+\cvitem{2017 Autumn}{\textbf{Video and Audio Files Matching, }\textit{Introduction to Auditory-Visual Information System.}\newline{}In this project, some silent videos and audio files extracted from those videos were given. I led our team to use skills in deep neural network to extract features in these files and match the video and audio files. We finally got a good efficient on test dataset given by the teacher (an accuracy of 87\%). (Python, Pytorch)}
+\cvitem{2017 Autumn}{\textbf{RBF Model Based on RJMCMC}, \textit{Probability and Stochastic Processes II}\newline{}This project aimed to implement a RBF (Radial Basis Function) model based on RJMCMC (Reversible Jump Markov Chain Monte Carlo) and solve a non-linear data-fitting problem. In this project, I
+\begin{itemize}
+    \item Learnd about RJMCMC ad RBF through reading paper.
+    \item Implemented a RBF model based on RJMCMC and solved a data-fitting problem pretty well. (Matlab)
+    \item Implemented another RBF model based on other methods such as AIC, MDL and compared their efficients.
+    \item Combined BP (Back Propagation) algorithm and RBF model to solve the problem from a different angle.
+\end{itemize}
+}
+\cvitem{2017 Summer}{\textbf{CPU Design}, \textit{Fundamental experiment of digital logic and processor}\newline{}In this project, I
+\begin{itemize}
+    \item Finished designing a single-cycle MIPS CPU on FPGA independently. (Verilog)
+    \item Assisted my partner to design pipeline structure and optimize critical path.
+\end{itemize}
+The frequency of our CPU was top10 among all teams and we got a full score.
+}
+
+%\cvitem{2017 Spring}{\textit{Signal and System}}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cventry{2017}{Scholarship of National Prize}{Beijing}{}{}{}
+\cventry{2017}{Scholarship of Academic Excellence}{Beijing}{}{}{}
+\cventry{2017}{Scholarship of Physical Excellence}{Beijing}{}{}{}
+\cventry{2016}{Scholarship of Academic Excellence}{Beijing}{}{}{}
+
+\section{Skills and Interests}
+\cvitem{Computer Skills}{Frequent user of C/C++, Matlab, Python, Verilog. Develop on Windows/Linux frequently.}
+\cvitem{Language}{Chinese: Native speaker\newline{}English: Advanced user. Scored 323 (153+170) in GRE test, 95 (29+24+20+22) in TOEFL test. Good at reading, listening and writing. Rich experience in scientific English reading and some experience in scientific English writing.}
+\cvitem{Other interest}{Good math skills. Strong background in Physics.\newline{}Table tennis. I am the captain of table tennis team of our department and got the fifth in Men's Table Tennis Doubles of Tsinghua University in 2017.}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
